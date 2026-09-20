@@ -1,0 +1,8 @@
+.idea/
+*.apk
+*.zip
+*.log
+remote-adb.conf
+dist/
+install-apk-and-magisk.ps1
+phone-magisk-service.sh

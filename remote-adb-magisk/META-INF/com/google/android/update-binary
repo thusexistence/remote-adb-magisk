@@ -1,0 +1,25 @@
+#!/system/bin/sh
+
+umask 022
+
+ui_print() {
+    echo "$1"
+}
+
+require_magisk() {
+    ui_print "! Magisk 20.4 or newer is required"
+    exit 1
+}
+
+OUTFD="$2"
+ZIPFILE="$3"
+
+# Magisk/Kitsune provides the authoritative installer implementation here.
+[ -f /data/adb/magisk/util_functions.sh ] || require_magisk
+. /data/adb/magisk/util_functions.sh
+
+[ -n "$MAGISK_VER_CODE" ] || require_magisk
+[ "$MAGISK_VER_CODE" -ge 20400 ] || require_magisk
+
+install_module
+exit 0
