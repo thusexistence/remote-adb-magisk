@@ -66,7 +66,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build-remote-adb-modul
 This creates:
 
 ```text
-remote-adb-magisk-v1.2.0.zip
+remote-adb-magisk-v1.2.1.zip
 remote-adb-magisk.zip
 ```
 
@@ -77,8 +77,8 @@ Generated ZIP files are intentionally excluded from Git. Release ZIPs belong in 
 Install the ZIP in the Magisk application, or from an existing rooted ADB connection:
 
 ```sh
-adb push remote-adb-magisk-v1.2.0.zip /data/local/tmp/
-adb shell "su -c 'magisk --install-module /data/local/tmp/remote-adb-magisk-v1.2.0.zip'"
+adb push remote-adb-magisk-v1.2.1.zip /data/local/tmp/
+adb shell "su -c 'magisk --install-module /data/local/tmp/remote-adb-magisk-v1.2.1.zip'"
 adb reboot
 ```
 
@@ -136,4 +136,3 @@ https://raw.githubusercontent.com/thusexistence/remote-adb-magisk/main/update.js
 - The module does not disable ADB authentication and does not expose a fixed unauthenticated ADB port.
 - Endpoint reporting is plaintext and is intended only for a trusted private LAN.
 - No software license is granted unless a license file is added later.
-

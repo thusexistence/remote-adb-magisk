@@ -1,5 +1,9 @@
 # Remote ADB Wi-Fi Bootstrap
 
+## 1.2.1
+
+- Change the Magisk module author metadata to the GitHub username `thusexistence`.
+
 ## 1.2.0
 
 - Wait up to 60 seconds for Android's saved-network auto-connect.

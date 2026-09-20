@@ -11,7 +11,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$targetVersion = '1.2.0'
+$targetVersion = '1.2.1'
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 if (-not $ModulePath) {
     $ModulePath = Join-Path $scriptRoot "remote-adb-magisk-v$targetVersion.zip"
