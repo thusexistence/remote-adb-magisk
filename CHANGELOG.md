@@ -1,5 +1,9 @@
 # Remote ADB Wi-Fi Bootstrap
 
+## 1.2.2
+
+- Switch the default update metadata endpoint from GitHub Raw to jsDelivr for better reachability on the target network.
+
 ## 1.2.1
 
 - Change the Magisk module author metadata to the GitHub username `thusexistence`.

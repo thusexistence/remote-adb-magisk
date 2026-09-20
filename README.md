@@ -66,7 +66,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build-remote-adb-modul
 This creates:
 
 ```text
-remote-adb-magisk-v1.2.1.zip
+remote-adb-magisk-v1.2.2.zip
 remote-adb-magisk.zip
 ```
 
@@ -77,8 +77,8 @@ Generated ZIP files are intentionally excluded from Git. Release ZIPs belong in 
 Install the ZIP in the Magisk application, or from an existing rooted ADB connection:
 
 ```sh
-adb push remote-adb-magisk-v1.2.1.zip /data/local/tmp/
-adb shell "su -c 'magisk --install-module /data/local/tmp/remote-adb-magisk-v1.2.1.zip'"
+adb push remote-adb-magisk-v1.2.2.zip /data/local/tmp/
+adb shell "su -c 'magisk --install-module /data/local/tmp/remote-adb-magisk-v1.2.2.zip'"
 adb reboot
 ```
 
@@ -125,7 +125,7 @@ cat /data/local/tmp/remote-adb-address.txt
 `module.prop` points Magisk to:
 
 ```text
-https://raw.githubusercontent.com/thusexistence/remote-adb-magisk/main/update.json
+https://cdn.jsdelivr.net/gh/thusexistence/remote-adb-magisk@main/update.json
 ```
 
 `update.json` publishes the current `version`, monotonically increasing `versionCode`, release ZIP URL, and changelog URL. Pushing a `v*` tag runs the release workflow and attaches the generated module ZIP to a GitHub Release.
