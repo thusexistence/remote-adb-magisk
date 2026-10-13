@@ -4,6 +4,7 @@
 
 - Update the deployment network to report endpoints to `192.168.1.207`.
 - Keep Wi-Fi credentials in the root-only device configuration file.
+- Serve update metadata and the module ZIP through jsDelivr for networks that cannot reach GitHub Releases.
 
 ## 1.2.2
 

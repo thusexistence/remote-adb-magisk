@@ -128,7 +128,7 @@ cat /data/local/tmp/remote-adb-address.txt
 https://cdn.jsdelivr.net/gh/thusexistence/remote-adb-magisk@main/update.json
 ```
 
-`update.json` publishes the current `version`, monotonically increasing `versionCode`, release ZIP URL, and changelog URL. Pushing a `v*` tag runs the release workflow and attaches the generated module ZIP to a GitHub Release.
+`update.json` publishes the current `version`, monotonically increasing `versionCode`, a jsDelivr ZIP URL, and changelog URL. The module ZIP is committed so devices can update through jsDelivr without reaching GitHub Releases. Pushing a `v*` tag also runs the release workflow and attaches the ZIP to a GitHub Release.
 
 ## Security notes
 
