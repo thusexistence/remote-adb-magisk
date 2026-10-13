@@ -1,5 +1,9 @@
 # Remote ADB Wi-Fi Bootstrap
 
+## 1.2.4
+
+- Leave `WIFI_BSSID` empty so Android can roam between matching access points and Mesh nodes.
+
 ## 1.2.3
 
 - Update the deployment network to report endpoints to `192.168.1.207`.

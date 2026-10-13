@@ -34,7 +34,7 @@ Use `remote-adb-magisk/remote-adb.conf.example` as the template:
 WIFI_SSID='GPY.AI_5G'
 WIFI_SECURITY='wpa2'
 WIFI_PASSWORD='YOUR_WIFI_PASSWORD'
-WIFI_BSSID='74:39:89:90:8a:cc'
+WIFI_BSSID=''
 
 # Optional. Leave empty to disable endpoint reporting.
 REPORT_HOST='192.168.1.207'
