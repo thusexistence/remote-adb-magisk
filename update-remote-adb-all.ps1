@@ -2,6 +2,7 @@
 param(
     [string]$AdbPath = 'adb.exe',
     [string]$ModulePath = '',
+    [string]$UpdateManifestUrl = 'https://fastly.jsdelivr.net/gh/thusexistence/remote-adb-magisk@main/update.json',
     [int]$TimeoutSeconds = 20,
     [int]$PushTimeoutSeconds = 90,
     [string[]]$TargetDeviceId = @(),
@@ -11,8 +12,12 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$targetVersion = '1.2.2'
 $scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$manifest = Invoke-RestMethod -Uri $UpdateManifestUrl -TimeoutSec 20
+$targetVersion = [string]$manifest.version
+if ([string]::IsNullOrWhiteSpace($targetVersion)) {
+    throw "Update manifest did not contain a version: $UpdateManifestUrl"
+}
 if (-not $ModulePath) {
     $ModulePath = Join-Path $scriptRoot "remote-adb-magisk-v$targetVersion.zip"
 }
