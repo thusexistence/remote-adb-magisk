@@ -1,5 +1,10 @@
 # Remote ADB Wi-Fi Bootstrap
 
+## 1.2.3
+
+- Update the deployment network to report endpoints to `192.168.1.207`.
+- Keep Wi-Fi credentials in the root-only device configuration file.
+
 ## 1.2.2
 
 - Switch the default update metadata endpoint from GitHub Raw to jsDelivr for better reachability on the target network.

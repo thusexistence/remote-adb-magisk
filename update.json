@@ -1,6 +1,6 @@
 {
-  "version": "1.2.2",
-  "versionCode": 7,
-  "zipUrl": "https://github.com/thusexistence/remote-adb-magisk/releases/download/v1.2.2/remote-adb-magisk-v1.2.2.zip",
+  "version": "1.2.3",
+  "versionCode": 8,
+  "zipUrl": "https://github.com/thusexistence/remote-adb-magisk/releases/download/v1.2.3/remote-adb-magisk-v1.2.3.zip",
   "changelog": "https://cdn.jsdelivr.net/gh/thusexistence/remote-adb-magisk@main/CHANGELOG.md"
 }

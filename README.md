@@ -31,13 +31,13 @@ Network credentials are deliberately not stored in the public module ZIP. Create
 Use `remote-adb-magisk/remote-adb.conf.example` as the template:
 
 ```sh
-WIFI_SSID='YOUR_WIFI_SSID'
+WIFI_SSID='GPY.AI_5G'
 WIFI_SECURITY='wpa2'
 WIFI_PASSWORD='YOUR_WIFI_PASSWORD'
-WIFI_BSSID=''
+WIFI_BSSID='74:39:89:90:8a:cc'
 
 # Optional. Leave empty to disable endpoint reporting.
-REPORT_HOST='192.168.1.100'
+REPORT_HOST='192.168.1.207'
 REPORT_PORT='39393'
 REPORT_INTERVAL='20'
 

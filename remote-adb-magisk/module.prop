@@ -1,7 +1,7 @@
 id=remote_adb
 name=Remote ADB Wi-Fi Bootstrap
-version=1.2.2
-versionCode=7
+version=1.2.3
+versionCode=8
 author=thusexistence
 description=Enable Wi-Fi with persistent retry, connect the configured network, and start Android 11+ native TLS wireless debugging at boot.
 updateJson=https://cdn.jsdelivr.net/gh/thusexistence/remote-adb-magisk@main/update.json
